@@ -1,0 +1,94 @@
+@import "{{ site.theme }}";
+
+/*
+ * Architect wide layout
+ */
+@media only screen and (min-width: 960px) {
+
+    /*
+   * Architect標準: 940px
+   * ↓
+   * 最大1440pxまで拡張
+   */
+    .inner {
+        width: calc(100% - 64px);
+        max-width: 1440px;
+    }
+
+    /*
+   * 標準のfloatレイアウトをGridへ変更
+   */
+    #content-wrapper .inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 260px;
+        column-gap: 40px;
+        align-items: start;
+    }
+
+    #main-content {
+        float: none;
+        width: auto;
+        min-width: 0;
+    }
+
+    aside#sidebar {
+        float: none;
+        width: auto;
+
+        min-height: 0;
+
+        padding-left: 24px;
+
+        background-image: none;
+        border-left: 1px solid #ddd;
+
+        box-sizing: border-box;
+    }
+
+    aside#sidebar {
+        position: sticky;
+        top: 24px;
+    }
+}
+
+/*
+ * sidebar layout
+ */
+.sidebar-nav h2 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar-nav h2:first-child {
+    margin-top: 0;
+}
+
+.sidebar-nav ul {
+    margin: 0 0 24px 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav a {
+    display: block;
+
+    padding: 7px 10px;
+
+    color: #2879d0;
+
+    border-radius: 4px;
+}
+
+.sidebar-nav a:hover {
+    background: #f0f7fb;
+    text-decoration: none;
+}
