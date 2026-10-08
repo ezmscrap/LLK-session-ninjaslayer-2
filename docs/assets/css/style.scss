@@ -93,12 +93,12 @@
     text-decoration: none;
 }
 
-table th {
+table thead tr th {
     background: blue;
     color: white;
     font-weight: bold;
 }
 
-table td {
+table tbody tr td {
   text-align: left;
 }
