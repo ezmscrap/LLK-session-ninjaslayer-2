@@ -92,19 +92,16 @@
 }
 
 .sidebar-nav a:hover {
-    background: blue;
     text-decoration: none;
 }
 
 table thead tr th {
-    background: blue;
-    color: white;
+    background: #2879d0;
+    color: #fafafd;
     font-weight: bold;
+  text-align: center;
 }
 
 table tbody tr td {
   text-align: left;
-}
-body {
-  background-color: red !important;
 }
