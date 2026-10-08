@@ -93,6 +93,12 @@
     text-decoration: none;
 }
 
-#main-content table td {
+table th {
+    background: blue;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
   text-align: left;
 }
